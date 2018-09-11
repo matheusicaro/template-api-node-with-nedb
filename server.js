@@ -1,11 +1,10 @@
 const express = require('express');
-let routeHome = require('./routes/home');
-let routeUsers = require('./routes/users');
+const consign = require('consign');
 
 let app = express();
 
-app.use(routeHome);
-app.use('/users', routeUsers);
+// incluindo pasta 'routes' no app.
+consign().include('routes').into(app);
 
 const port = 3000;
 const ip = '127.0.0.1';
