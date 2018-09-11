@@ -1,26 +1,11 @@
 const express = require('express');
+let routeHome = require('./routes/home');
+let routeUsers = require('./routes/users');
 
 let app = express();
 
-app.get('/', (req, res) => {
-
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/html');
-    res.end("<h1> ok <h1>")
-
-})
-
-app.get('/users', (req, res) => {
-
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'application/json');
-    res.json({
-        user:[{
-            name: 'matheus',
-            id: 1
-        }]
-    });
-})
+app.use(routeHome);
+app.use('/users', routeUsers);
 
 const port = 3000;
 const ip = '127.0.0.1';
