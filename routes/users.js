@@ -8,13 +8,17 @@ module.exports = (app)=>{
 
     app.get('/users', (req, res) => {
 
-        res.statusCode = 200;
-        res.setHeader('Content-Type', 'application/json');
-        res.json({
-            user:[{
-                name: 'matheus',
-                id: 1
-            }]
+        db.find({}).sort({name:1}).exec((err, user) => {
+
+            if(err){
+                app.utils.error.sendError(err, req, resp);
+            }else{
+                res.statusCode = 200;
+                res.setHeader('Content-Type', 'application/json');
+                res.json({
+                    user : user
+                });
+            }
         });
     })
 
@@ -23,11 +27,7 @@ module.exports = (app)=>{
         db.insert(req.body, (err, user) =>{
             
             if(err){
-                console.log(`error: ${err}`);
-                res.status(400).json({
-                    error: err
-                });
-
+                app.utils.error.sendError(err, req, resp);
             }else{
                 res.status(200).json(user);
             }
