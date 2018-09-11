@@ -1,3 +1,9 @@
+let dataBase = require('nedb');
+let db = new dataBase({
+    filename: 'users.db',
+    autoload: true      // assim que salvar o objeto, fica com ele na memoria para uso.
+})
+
 module.exports = (app)=>{
 
     app.get('/users', (req, res) => {
@@ -14,8 +20,18 @@ module.exports = (app)=>{
 
     app.post('/users', (req, res) => {
 
-        res.statusCode = 200;
-        res.json(req.body);
+        db.insert(req.body, (err, user) =>{
+            
+            if(err){
+                console.log(`error: ${err}`);
+                res.status(400).json({
+                    error: err
+                });
+
+            }else{
+                res.status(200).json(user);
+            }
+        })
     })
     
 }
