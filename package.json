@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/matheusicaro/node-server#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "consign": "^0.1.6",
     "express": "^4.16.3",
     "nodemon": "^1.18.4"
   }
