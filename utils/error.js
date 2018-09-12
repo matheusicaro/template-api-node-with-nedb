@@ -1,6 +1,6 @@
-module.exports = (app) =>{
+module.exports = {
 
-    sendError: (err, req, resp, code=400) => {
+    sendError: (err, req, res, code=400) => {
         
         console.log(`error: ${err}`);
                 res.status(400).json({

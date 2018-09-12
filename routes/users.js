@@ -26,6 +26,8 @@ module.exports = (app)=>{
 
     router.post((req, res) => {
 
+        if( !app.utils.validator.user(app, req, res) ) return false;    // se retornar false, é porque existe erros, então pare a execução do codigo retornando false.
+
         db.insert(req.body, (err, user) =>{
             
             if(err){
@@ -38,7 +40,7 @@ module.exports = (app)=>{
 
     let routerId = app.route('/users/:id');
     routerId.get((req, res) => {
-
+        
         db.findOne({_id:req.params.id}).exec((err, user) => {
 
             if(err){
@@ -50,6 +52,8 @@ module.exports = (app)=>{
     })
 
     routerId.put((req, res) => {
+       
+        if( !app.utils.validator.user(app, req, res) ) return false;    // se retornar false, é porque existe erros, então pare a execução do codigo retornando false.
 
         db.update({_id:req.params.id}, req.body, err => {
 
