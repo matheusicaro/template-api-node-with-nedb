@@ -1,0 +1,19 @@
+{
+    "database": {
+        "name": "NeDB",
+        "color": "#244a64",
+        "tags": [
+            "JavaScript",
+            "JSON-based",
+            "Query API"
+        ]
+    },
+    "backend": {
+        "name": "Node",
+        "color": "#4CAF50",
+        "tags": [
+            "JavaScript",
+            "Express"
+        ]
+    }
+}
