@@ -2,17 +2,17 @@
   "profile": {
     "pt": {
       "kind": "Open Source",
-      "name": "REST API  Com Spring E PostgreSQL Para Estudos",
+      "name": "Template API RESTful Em NodeJS Com Banco De Dados NeDB",
       "intro": "Template servidor RESTful em NodeJS para iniciar projetos com banco de dados \"NeDB\""
     },
     "en": {
       "kind": "Open Source",
-      "name": "Rest API With Spring And PostgreSQL For Studies",
+      "name": "Template RESTful API in NodeJS With Database NeDB",
       "intro": "Template server RESTful in NodeJS to start projects with data base \"NeDB\"."
     },
     "es": {
       "kind": "Open Source",
-      "name": "REST API Con Spring Y PostgreSQL Para Estudios",
+      "name": "Template API RESTful Em NodeJS Com Banco De Dados NeDB",
       "intro": "Template servidor RESTful en NodeJS para iniciar proyectos con base de datos \"NeDB\"."
     }
   },
