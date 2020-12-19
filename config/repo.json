@@ -2,18 +2,18 @@
   "profile": {
     "pt": {
       "kind": "Open Source",
-      "name": "Template API RESTful Em NodeJS Com Banco De Dados NeDB",
-      "intro": "Template servidor RESTful em NodeJS para iniciar projetos com banco de dados \"NeDB\""
+      "name": "Template API REST Em NodeJS Com Banco De Dados NeDB",
+      "intro": "Template servidor REST em NodeJS para iniciar projetos com banco de dados \"NeDB\""
     },
     "en": {
       "kind": "Open Source",
-      "name": "Template RESTful API in NodeJS With Database NeDB",
-      "intro": "Template server RESTful in NodeJS to start projects with database \"NeDB\"."
+      "name": "Template REST API in NodeJS With Database NeDB",
+      "intro": "Template server REST in NodeJS to start projects with database \"NeDB\"."
     },
     "es": {
       "kind": "Open Source",
-      "name": "Template API RESTful Em NodeJS Com Banco De Dados NeDB",
-      "intro": "Template servidor RESTful en NodeJS para iniciar proyectos con base de datos \"NeDB\"."
+      "name": "Template API REST Em NodeJS Com Banco De Dados NeDB",
+      "intro": "Template servidor REST en NodeJS para iniciar proyectos con base de datos \"NeDB\"."
     }
   },
   "stack": {
