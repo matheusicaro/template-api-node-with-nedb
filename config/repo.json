@@ -5,6 +5,11 @@
       "name": "Template API REST Em NodeJS Com Banco De Dados NeDB",
       "intro": "Template servidor REST em NodeJS para iniciar projetos com banco de dados \"NeDB\""
     },
+    "fr": {
+      "kind": "Open Source",
+      "name": "Template API REST Dans NodeJS avec la base de données NeDB",
+      "intro": "Template Serveur REST dans NodeJS pour démarrer des projets avec base de données \"NeDB\""
+    },
     "en": {
       "kind": "Open Source",
       "name": "Template REST API in NodeJS With Database NeDB",
@@ -20,20 +25,13 @@
     "database": [
       {
         "name": "NeDB",
-        "tags": [
-          "JavaScript",
-          "JSON-based",
-          "Query API"
-        ]
+        "tags": ["JavaScript", "JSON-based", "Query API"]
       }
     ],
     "backend": [
       {
         "name": "Node.js",
-        "tags": [
-          "JavaScript",
-          "Express"
-        ]
+        "tags": ["JavaScript", "Express"]
       }
     ]
   }
