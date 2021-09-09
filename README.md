@@ -1,6 +1,5 @@
 # RESTFUL-NODE-SERVER
-[![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/matheusicaro/template-api-node-with-nedb
-/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/matheusicaro/template-api-node-with-nedb/blob/master/LICENSE)
 
 Basic server to start project. Connected with data base "nedb".
 
