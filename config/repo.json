@@ -21,6 +21,7 @@
       "intro": "Template servidor REST en NodeJS para iniciar proyectos con base de datos \"NeDB\"."
     }
   },
+  "tags": [ "Node.js", "JavaScript", "Express", "Back-end"],
   "stack": {
     "database": [
       {
